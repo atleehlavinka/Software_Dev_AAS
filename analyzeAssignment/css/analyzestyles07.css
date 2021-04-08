@@ -1,0 +1,86 @@
+/* Style sheet created by: Atlee Hlavinka, 04/07/2021 */
+
+/* Style for body specifies a background color */
+body {
+	background-color: #FFFFFF;
+}
+
+/* Style for the container element */
+#container {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Style for the header element */
+header {
+	font-family: Verdana, Arial, sans-serif;
+	background-color: #FFFFFF;
+	color: #4E9657;
+	padding: 0.5%;
+	margin-left: 1%;
+	font-size: 3em;
+}
+
+/* Style for the nav element */
+nav {
+	padding: 0.5%;
+}
+
+/* Style for the nav list item elements */
+nav li {
+	display: inline;
+}
+
+/* Style for the nav links element */
+nav li a {
+	color: #4E9657;
+	padding-left: 2%;
+	padding-right: 2%;
+	text-decoration: none;
+}
+/* Style for the table */
+table{
+  width: 100%;
+}
+td, th {
+	border: 1px solid black;
+}
+/* Style for the main element */
+main {
+	padding: 1em;
+	background-color: #4E9657
+}
+/* Style for the section element */
+section {
+	background-color: white;
+	color: #4E9657;
+	padding: 1em;
+	margin-top: 1px;
+}
+/* Style for the article element */
+article {
+	border-top: solid;
+	border-color: black;
+	padding: 1em;
+	margin-top: 1px;
+	color: black;
+}
+article h3 {
+	text-align: center;
+}
+/* Style for the aside element */
+aside {
+	background-color: #4E9657;
+	color: white;
+	text-align: center;
+	font-size: 1.5em;
+	padding: 1em;
+	margin-top: 1px;
+	border-radius: 50px;
+}
+/* Style for the footer element */
+footer {
+	text-align: center;
+	font-size: 0.70em;
+}
