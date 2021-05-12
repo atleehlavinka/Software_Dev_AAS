@@ -9,8 +9,8 @@
 }
 
 .bg-red {
+    background-image: url('../images/logo.png') !important;
     background-color:rgba(87, 85, 85, 0.75);
-    background-image: url('./images/logo.png') !important;
     background-repeat: no-repeat;
     background-position: center;
 }
