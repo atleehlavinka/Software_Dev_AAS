@@ -1,0 +1,241 @@
+
+.jumbotron {
+    min-height: 200px;
+}
+
+.home_rav {
+    display: block;
+    height: 40px;
+}
+
+.bg-red {
+    background-color:rgba(87, 85, 85, 0.75);
+    background-image: url('../images/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-red-footer {
+    background-color:rgba(87, 85, 85, 0.75);
+}
+
+.bg-light-blue {
+    background-color:rgba(30, 45, 46, 0.95);   
+    font-size: 1.25em;
+}
+
+
+
+.navbar-brand img {
+    width: 40px;
+}
+
+.modal-header, .modal-footer {
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+.modal-header {
+    background-image: url('../images/modal.jpg');
+    background-position: top;
+}
+
+.modal-footer {
+    background-image: url('../images/modal.jpg');
+    background-position: bottom;
+}
+
+.modal-title {
+    font-family: 'Alex Brush', cursive;
+    font-size: 3em;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-left: auto;
+}
+
+.welcome-message {
+    font-family: 'Alex Brush', cursive;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.navbar {
+    color: black;
+}
+
+.nav-item {
+    margin-right: 5px;
+    color: black;
+}
+
+.nav-link {
+    color: rgb(167, 123, 65);
+}
+
+
+.cursive {
+    font-family: 'Damion', cursive;
+}
+
+.reservation {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+main {
+    margin-bottom: 50px;
+}
+
+html {
+    background-image: url('../images/background.jpg');
+    background-position: center center;
+}
+
+html, body {
+    background-color:rgb(250, 240, 230, 0.5);
+}
+
+.bg-white {
+    background-color:rgb(247, 231, 211, 0.9) !important ;
+    padding-top: 100px;
+    width: 100%;
+    min-height: 200px;
+    max-width: 1250px;
+    padding-right: 50px;
+}
+
+.bg-white h3 {
+    font-family: 'Alex Brush', cursive;
+
+    font-weight: 800;
+    font-stretch: 150%;
+}
+
+.bg-white h2 {
+    font-family: 'Alex Brush', cursive;
+
+    font-weight: 800;
+    font-size: 3em;
+}
+
+.customimg {
+    max-width: 90%;
+    border-style:solid;
+    border-color: black;
+    border-width: 2px;
+    box-shadow:0px -1px 2px rgba(0,0,0,0.5), 0px 1px 25px rgba(0,0,0,0.7);
+}
+
+.pagebreak {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 250px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer i {
+    padding: 20px;
+}
+
+footer p {
+    margin-top: 20px;
+}
+
+.scroll {
+    background-color: #fed9ff;
+    max-width: 1250px;
+    max-height: 600px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+.menucategory {
+    text-align: left;
+    font-family: 'Alex Brush', cursive;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    margin-top: 30px;
+}
+
+.menuitem {
+    float: left;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.menuprice {
+    float: right;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.menudescription {
+    clear: both;
+    text-align: left;
+    margin-top: 0px;
+    font-size: 0.8em;
+}
+
+.carousel {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel img {
+    max-height: 620px;
+    max-width: 1440px;
+}
+
+
+
+/* Show mobile class, hide tablet-desktop class and menu-links id */
+
+
+/* Media Query for Tablet Viewport */
+@media (max-width: 575px) { 
+    .mobile {
+        display: block;
+    }
+    img {
+        display: none;
+    }
+    .tablet-desktop {
+        display: none;
+    }
+    .navspace {
+        display: none;
+    }
+}
+
+/* Media Query for Tablet Viewport */
+@media (min-width: 576px) {  
+
+    /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+    
+}
+
