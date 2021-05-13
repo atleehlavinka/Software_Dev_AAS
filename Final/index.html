@@ -186,86 +186,81 @@
           </div>
         </div>
         <button type="button" class="btn btn-dark btn-lg reservation" data-toggle="modal" data-target="#myModal">Make a Reservation</button><br>
-
-                <!-- Modal -->
-                <div class="modal fade" id="myModal" role="dialog">
-                  <div class="modal-dialog">
-             
-              <!-- Modal content-->
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h4 class="modal-title">Make a Reservation</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      </div>
-                      <div class="modal-body">
-                        <form action="mailto:atleehlavinka@my.cwi.edu?Student Events" enctype="text/plain">
-                          <div class="form-group">
-                          <label for="exampleFormControlSelect2">What day would you like a reservation?</label>
-                          <select multiple class="form-control" id="exampleFormControlSelect2">
-                              <option>Monday</option>
-                              <option>Tuesday</option>
-                              <option>Wednesday</option>
-                              <option>Thursday</option>
-                              <option>Friday</option>
-                              <option>Saturday</option>
-                              <option>Sunday</option>
-                          </select>
-                          </div>
-                          <div class="form-group">
-                              <label for="exampleFormControlSelect1">What time?</label>
-                              <select class="form-control" id="exampleFormControlSelect1">
-                              <option>5:00 PM</option>
-                              <option>5:30 PM</option>
-                              <option>6:00 PM</option>
-                              <option>6:30 PM</option>
-                              <option>7:00 PM</option>
-                              <option>7:30 PM</option>
-                              <option>8:00 PM</option>
-                              <option>8:30 PM</option>
-                              <option>9:00 PM</option>
-                              <option>9:30 PM</option>
-                              <option>10:00 PM</option>
-                              <option>10:30 PM</option>
-                              </select>
-                          </div>
-                          <div class="form-group">
-                              <label for="exampleFormControlInput1">Contact Name</label>
-                              <input type="email" class="form-control" id="exampleFormControlInput1">
-                          </div>
-                          <div class="form-group">
-                              <label for="exampleFormControlInput2">Contact Number</label>
-                              <input type="phone" class="form-control" id="exampleFormControlInput2" placeholder="(123)-456-7890">
-                          </div>
-                          <button type="button" class="btn btn-dark btn-lg submit" data-toggle="modal" data-target="#myModal1">Submit</button>
-                          <!-- Modal -->
-                          <div class="modal fade" id="myModal1" role="dialog">
-                            <div class="modal-dialog">
-                       
-                        <!-- Modal content-->
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h4 class="modal-title">Thank You!</h4>
-                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                </div>
-                                <div class="modal-body">
-                                  <p>We will be in touch shortly.</p>
-                                </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-light btn-lg" data-dismiss="modal">Close</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-light btn-lg" data-dismiss="modal">Close</button>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Make a Reservation</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <form action="mailto:atleehlavinka@my.cwi.edu?Student Events" enctype="text/plain">
+                <div class="form-group">
+                <label for="exampleFormControlSelect2">What day would you like a reservation?</label>
+                <select multiple class="form-control" id="exampleFormControlSelect2">
+                    <option>Monday</option>
+                    <option>Tuesday</option>
+                    <option>Wednesday</option>
+                    <option>Thursday</option>
+                    <option>Friday</option>
+                    <option>Saturday</option>
+                    <option>Sunday</option>
+                </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">What time?</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                    <option>5:00 PM</option>
+                    <option>5:30 PM</option>
+                    <option>6:00 PM</option>
+                    <option>6:30 PM</option>
+                    <option>7:00 PM</option>
+                    <option>7:30 PM</option>
+                    <option>8:00 PM</option>
+                    <option>8:30 PM</option>
+                    <option>9:00 PM</option>
+                    <option>9:30 PM</option>
+                    <option>10:00 PM</option>
+                    <option>10:30 PM</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Contact Name</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput2">Contact Number</label>
+                    <input type="phone" class="form-control" id="exampleFormControlInput2" placeholder="(123)-456-7890">
+                </div>
+                <button type="button" class="btn btn-dark btn-lg submit" data-toggle="modal" data-target="#myModal1">Submit</button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="myModal1" role="dialog">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Thank You!</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                          <p>We will be in touch shortly.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-light btn-lg" data-dismiss="modal">Close</button>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-light btn-lg" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
       </div>
+
 
     </MAIN>
 
