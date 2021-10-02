@@ -1,0 +1,113 @@
+.bi {
+    margin-left: 20px;
+    color:cadetblue;
+    font-size: 1.4em;
+    
+}
+
+.mainsection {
+    background-image: url("../media/background4.jpg");
+    background-position: bottom;
+}
+
+.circle {
+    background: #32557f;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%; 
+}
+
+.project {
+    background: #32557f;
+    width: 250px;
+    height: 250px;
+    border-radius: 10%; 
+  }
+
+.navbar {
+    background-color: rgb(59, 59, 59, 0.75);
+}
+.card {
+    min-height: 250px;
+    background-color: rgb(95, 158, 160, 0.75);
+}
+
+.card img, .card a {
+    min-height: 200px;
+    background-color:rgb(245, 245, 245, 0.75);
+    cursor:pointer;
+}
+
+
+
+.headersection h1{
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 0.2em;
+    
+}
+
+
+
+.carousel {
+    min-height: 350px;
+    max-height: 600px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
+
+.carousel img {
+    max-height: 600px;
+}
+
+.footersection {
+    
+}
+
+/* Media Query for Mobile Viewport */
+@media (max-width: 575px) { 
+    .tablet-desktop, .card, .carousel {
+        display: none;
+    }
+
+    h1, h3, p {
+        text-align: center;
+    }
+
+    .headersection {
+        padding-top: 50px;
+        text-align: center;
+    }
+
+}
+/* Media Query for Tablet-Desktop Viewport */
+@media (min-width: 576px) and (max-width: 1200px) {  
+    
+    .mobile, .card {
+        display: none;
+    }
+
+    .headersection {
+        padding-top: 50px;
+    }
+
+    form {
+        padding-top: 60px;
+    }
+
+    
+}
+
+/* Media Query for Tablet-Desktop Viewport */
+@media (min-width: 1201px) {  
+    
+    .mobile {
+        display: none;
+    }
+
+    .headersection {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+    
+}
