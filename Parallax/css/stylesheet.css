@@ -16,8 +16,8 @@ header .navbar, footer {
 /* HOME PAGE */
 
 #home {
-    background-image: url('./media/home-img3.jpg'), url('./media/logo3.png');
-    background-position: center, center;
+    background-image: url('./media/home-img3.jpg')
+    background-position: center;
     background-size: cover;
     text-align: center;
     min-height: 100vh;
@@ -33,7 +33,7 @@ header .navbar, footer {
 }
 
 #logo {
-    background-image: url('./media/logo3.png');
+    background-image: url('../media/logo3.png');
     background-repeat: no-repeat;
     background-size: cover;
     margin:auto;
