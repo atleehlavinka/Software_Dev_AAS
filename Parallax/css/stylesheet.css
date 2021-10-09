@@ -1,0 +1,185 @@
+/* HEADER */
+
+header .bi {
+    margin-left: 20px;
+    color:rgb(148, 221, 255);
+    font-size: 1.4em;
+    
+}
+
+header .navbar, footer {
+    background-color: rgba(5, 36, 56, 0.75);
+
+    text-align: center;
+}
+
+/* HOME PAGE */
+
+#home {
+    background-image: url('../media/home-img3.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    min-height: 100vh;
+}
+
+#logo {
+    background-image: url('../media/logo3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:auto;
+    width: 50vh;
+    height: 50vh;
+    transform: translate(0%, 50%);
+}
+
+/* ABOUT PAGE */
+
+#about {
+    padding: 10px 10px 10px 10px;
+}
+
+#about img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+/* PRODUCT PAGE */
+
+#product {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#product img {
+    padding: 50px 50px 50px 50px;
+    max-height: 80%;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    background-image: url('../media/card-back2.jpg');
+    background-color: rgb(38, 41, 41);
+    background-position: right;
+    color: white;
+}
+
+.card:hover {
+    background-color: rgb(90, 90, 90);
+    color: rgb(194, 194, 194);
+}
+
+/* NEWSLETTER PAGE */
+
+#newsletter {
+}
+
+#newsletter .nav-link {
+    color: white;
+}
+
+#newletter .nav-link:hover {
+    color: rgb(145, 145, 145);
+}
+
+
+/* CONTACT PAGE */
+
+#contact {
+padding-top: 50px;
+}
+
+#contact .form-control {
+    background-color: rgb(184, 184, 184);
+}
+
+#contact .form-control:hover {
+    background-color: rgb(204, 204, 204);
+}
+
+/* FOOTER */
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Special */
+.rotateimg180 {
+    transform: rotate(180deg);
+  }
+
+#requirement {
+    color: rgb(150, 7, 7);
+}
+.scrolling {
+    display: block;
+    max-height: 700px;
+    overflow-y: scroll;
+}
+
+.primary {
+}
+
+.secondary {
+}
+
+
+/* Media Query for Mobile Viewport */
+@media (max-width: 575px) { 
+    .tablet-desktop, .tablet, .carousel, .searchbar{
+        display: none;
+    }
+
+    h1, h3{
+        text-align: center;
+    }
+
+    #about {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+}
+/* Media Query for Tablet-Desktop Viewport */
+@media (min-width: 576px) and (max-width: 1200px) {  
+    
+    .mobile, .searchbar {
+        display: none;
+    }
+
+    .headersection {
+        padding-top: 50px;
+    }
+
+    form {
+        padding-top: 60px;
+    }
+
+    #newsletter {
+        display: none;
+    }
+
+    
+}
+
+/* Media Query for Tablet-Desktop Viewport */
+@media (min-width: 1201px) {  
+    
+    .mobile, .tablet {
+        display: none;
+    }
+
+    .headersection {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+    
+}
