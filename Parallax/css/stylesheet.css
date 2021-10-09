@@ -16,7 +16,7 @@ header .navbar, footer {
 /* HOME PAGE */
 
 #home {
-    background-image: url('.../media/home-img3.jpg')
+    background-image: url('../media/home-img3.jpg')
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -72,7 +72,7 @@ header .navbar, footer {
 }
 
 .card {
-    background-image: url('./media/card-back2.jpg');
+    background-image: url('../media/card-back2.jpg');
     background-color: rgb(38, 41, 41);
     background-position: right;
     color: white;
