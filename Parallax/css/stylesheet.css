@@ -23,15 +23,6 @@ header .navbar, footer {
     min-height: 100vh;
 }
 
-#home img {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    max-height: 50%;
-}
-
 #logo {
     background-image: url('../media/logo3.png');
     background-repeat: no-repeat;
