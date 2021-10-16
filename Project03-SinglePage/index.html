@@ -1,0 +1,157 @@
+<!doctype html>
+
+<!--------------------------------------------------
+--
+#Original Author: Atlee Hlavinka          
+#Date Created: 10/15/2021
+#Version: 1.0
+#Date Last Modified:                                
+#Modified by:                                           
+#Modification log:   
+
+    Version 1.0 - 10-15-2021 - Intial creation of index.HTML, CSS, JS, and Mod Log.
+	--Image Added:
+		Home Page Background: https://desktopwalls.net/wp-content/uploads/2015/08/Blue%20Mountain%20Range%20Desktop%20Wallpaper.jpg
+
+        Home Page Logo: https://www.vexels.com/png-svg/preview/128279/mountain-camping-label
+
+        slide2: https://www.wallpapertip.com/wmimgs/76-768288_mount-rainier-national-park.jpg
+        slide1: https://www.itl.cat/pngfile/big/79-797319_hiking-trekking-mountains-nature-sky-mountain-hiking-boots.jpg
+        slide3: https://laurenonlocation.com/wp-content/uploads/2020/12/1-1920x1280.jpg
+        slide4: https://wildernesstimes.com/wp-content/uploads/2020/10/compass-for-hiking-min-scaled.jpg
+        
+--
+---------------------------------------------------->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script defer src="js/lib/fontawesome-all.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src='https://unpkg.com/vue@next'></script>
+
+    <title>Mountain Man Store</title>
+</head>
+
+<body>
+
+    <header id="top" class="site-header pb-5">
+
+        <section class="container" id="app">
+
+            <nav class="site-nav family-sans text-uppercase navbar navbar-expand-md navbar-dark">
+
+                <div class="container-fluid">
+    
+                    <a class="navbar-brand text-dark" href="#top"><img class="icon" src="images/logo3.png"> Mountain Man</a>
+                                    
+                    <section class="collapse navbar-collapse" id="myTogglerNav">
+ 
+                            <nav class="navbar navbar-light sticky-top ml-auto">
+                                
+                                <div class="navbar-dark ml-auto d-flex justify-content-end pb-4">
+
+                                    <div  class="mr-auto d-flex align-items-end flex-column bd-highlight position-absolute" >
+
+                                        <div class="mb-2">
+
+                                            <button @click="displayCart= !displayCart" class="btn btn-success btn-sm ml-3" id="cartDropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-shopping-cart mr-1"></i>
+                                                {{cart.length}}
+                                            </button>
+
+                                        </div>
+
+                                        <div v-if="displayCart" class="list-group" aria-labelledby="cartDropdown">
+                                            <div v-for="(item, index) in cart" :key="index" class="list-group-item d-flex justify-content-between">
+                                                <div class="col-3">
+                                                    <img class="img-fluid d-block" :src="item.image" :alt="item.name">
+                                                </div>
+                                                <div class="col-5">{{item.name}}</div>
+                                                <div class="col-4 font-weight-bold">{{currency(item.price)}}</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                
+                            </nav>
+     
+                    </section>
+                </div>
+            </nav>
+
+            <div class="container bg-dark main-shopping mt-3">
+                    
+                    <div class="row justify-content-center">
+
+                        <label class="form-label h2 text-white mt-3">Featured Apparel</label>
+
+                        <div v-for="(item, index) in filteredProducts" :key="item.id" id="item-list" class="row d-flex my-5 align-items-center mr-5">
+                            <div class="col-lg-1 col-md-2 col-sm-3">
+                                <button @click="addToCart(item)" class="btn btn-white ml-4">+</button>
+                            </div>
+                            <div class="col-lg-4 col-md-2 col-sm-3" >
+                                <img class="img-fluid d-block" :src="item.image" :alt="item.name">
+                            </div>
+                            <div class="col-lg-7 col-md-8 col-sm-6">
+                                <h3 class="text-white">{{item.name}}</h3>
+                                <p class="mb-0 text-white">{{item.description}}</p>
+                                <br>
+                                <div class="h5 float-right">
+
+                                    <span class="badge bg-success" v-if="(item.price<100 && item.price>50) && displayLabels">Best Seller</span>
+                                    <span class="badge bg-danger" v-else-if="item.price<=50 && displayLabels" v-else>On Sale!</span>
+                                    <span class="text-white"> &nbsp;{{currency(item.price)}}</span>
+                                </div> 
+   
+                            </div>
+
+                        </div>
+                        <div class="badge bg-dark my-3 text-white"> Total Results: {{ filteredProducts.length}}</div>
+                    </div>
+                
+            </div>
+        </section>
+
+
+
+    </header>
+
+
+    <footer class="site-footer bg-dark d-flex justify-content-center">
+
+        <section class="layout-social py-5">
+
+            <a class="text-light px-2" href="https://twitter.com/planetoftheweb">
+                <i class="layout-icon fab fa-twitter"></i>
+            </a>
+
+            <a class="text-light px-2" href="https://linkedin.com/in/planetoftheweb">
+                <i class="layout-icon fab fa-linkedin"></i>
+            </a>
+
+            <a class="text-light px-2" href="https://github.com/planetoftheweb">
+                <i class="layout-icon fab fa-github"></i>
+            </a>
+
+            <a class="text-light px-2" href="https://www.youtube.com/user/planetoftheweb">
+                <i class="layout-icon fab fa-youtube"></i>
+            </a>
+
+        </section>
+    
+    </footer>
+
+    <script src="js/lib/bootstrap.bundle.min.js"></script>
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/script.js"></script>
+  
+</body>
+
+</html>
