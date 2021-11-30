@@ -1,0 +1,56 @@
+/* Style Sheet If You Build It (table), They Will Come */
+/* Name: Atlee Hlavinka */
+
+/* Gradient target HTML body element tag */
+body {
+    background: linear-gradient(to right,#00ccff, #ff6666);
+}
+
+/* css target tableStyle class in HTML */
+
+.tableStyle {
+    border: 10px solid darkcyan;
+    background-color: grey;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+/* css target HTML Table caption tag */
+
+caption {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 2em;
+}
+
+/* css target HTML Table thead tag */
+ 
+ thead {
+     text-align: left;
+     background-color: white;
+ }
+ 
+/* css target HTML Table tfoot tag */
+ tfoot {
+     text-align: center;
+     background-color: white;
+ }
+ 
+ 
+/* Add a pseudo-class selector (page 320) */
+/* For example --  :nth-child(even)       */
+ 
+tr:nth-child(even) {
+    background-color: #e6ffff;
+}
+ 
+ 
+/* use colgroup */
+/* Week 3, Wednesday Video Lesson Chapter 8 folder - Table Column Group, page 173 */
+
+colgroup col.red {
+    background-color: red;
+}
