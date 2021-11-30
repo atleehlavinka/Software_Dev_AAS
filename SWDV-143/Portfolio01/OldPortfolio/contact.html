@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- Atlee Hlavinka 04/14/2021
+-->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="One-of-kind jewelry inspired by Mother Nature">
+	<meta name="keywords" content="durango, jewelry">
+	<meta name="author" content="Atlee Hlavinka">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="./css/styles.css" type="text/css" rel="stylesheet" />
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+	<title>Personal Portfolio - Atlee Hlavinka</title>
+</head>
+<body>
+	<div id="outerwrapper">
+	<header>
+        <a href="index.html"><img src="./image/profile.jpg" alt="logo"></a>
+        <br><br><br><h1>Atlee Hlavinka</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a>&nbsp;</li>
+			<li><a href="about.html">About</a>&nbsp;</li>
+			<li><a href="education.html">Education</a>&nbsp;</li>
+			<li><a href="samples.html">Samples</a>&nbsp;</li>
+            <li><a href="contact.html">Contact</a>&nbsp;</li>
+		</ul>
+	</nav>
+	<main>
+        <br><br><br>
+        <h2>Contact Me</h2>
+        <form action="mailto:atleehlavinka@my.cwi.edu?subject=Personal_Portfolio_Mail" enctype="text/plain" method="POST">
+            <fieldset>
+				<br>
+				<label for="email">Email:</label>
+				<br>
+				<!-- <input type="text" name="firstName" size="30" id="firstname"> -->
+				<input type="email" name="email_address" size="30" class="form-control" id="email_address" placeholder="">
+                <span class="requirement"></span>
+				<br><br>
+				<label for="phone">Phone:</label>
+				<br>
+				<!-- <input type="text" name="lastName" size="30" id="lastname"> -->
+				<input type="text" name="phone" size="30" class="form-control" id="phone" placeholder="">
+                <span class="requirement"></span>
+				<br>
+				<br>
+				<label for="comment">Enter your comments:</label>
+				<br>
+				<!-- <textarea cols="80" rows="10" name="comment" id="comment"></textarea> -->
+				<textarea type="comments" class="form-control" id="comments" cols="80" rows="10" ></textarea>
+				<span class="requirement"></span>
+				<br>
+				<br>
+				<input type="button" id="submit" value="Submit" class="btn">
+				<input type="button" id="reset_form" value="Reset" class="btn">
+				<br>
+				<br>
+			</fieldset>
+        </form>
+	</main>
+	<footer>
+        <hr>
+		<p>Contact by email: <a href="mailto:atleehlavinka@my.cwi.edu">atleehlavinka@my.cwi.edu</a>
+		<br>Or by phone: <a href="tel:+1-208-123-1234">(208)-123-1234</a>
+		<br>123 South Street
+		<br><br><a href="https://github.com/atleehlavinka/atleehlavinka.github.io" target="_blank"><img src="./image/github.png" alt="social icon for github"></a>
+		<a href="https://www.linkedin.com/in/atlee-hlavinka-465012106" target="_blank"><img src="./image/linkedin.png" alt="social icon for linkedin"></a>
+		<br><br></p>
+	</footer>
+	</div>
+	<script src="js/contact.js"></script>
+</body>
+</html>
+
+
