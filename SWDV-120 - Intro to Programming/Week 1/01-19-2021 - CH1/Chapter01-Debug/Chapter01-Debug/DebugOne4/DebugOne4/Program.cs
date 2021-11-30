@@ -1,0 +1,19 @@
+﻿using System;
+using static System.Console;
+namespace DebugOne4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            WriteLine("How to play tic tac toe:");
+            WriteLine("Draw a three by three grid.");
+            WriteLine("The first player puts an X in any of the nine locations.");
+            WriteLine("The second player puts an O in any remaining location.");
+            WriteLine("Players alternate turns until one has three of the same symbol in a row");
+            WriteLine("vertically, horizontally, or diagonally.");
+            WriteLine("If all nine squares are filled without three in a row,");
+            WriteLine("the game ends in a tie.");
+        }
+    }
+}

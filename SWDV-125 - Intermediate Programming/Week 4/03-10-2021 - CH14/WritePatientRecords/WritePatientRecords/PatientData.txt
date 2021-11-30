@@ -1,0 +1,3 @@
+555,weston,1500
+333,gilbert,2500
+222,stewart,8500
