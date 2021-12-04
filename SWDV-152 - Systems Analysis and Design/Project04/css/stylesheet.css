@@ -1,0 +1,148 @@
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+hr { display: block; height: 1px;
+    border: 0; border-top: 1px solid #ccc;
+    margin: 1em 0; padding: 0; }
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+.containercontact {
+    height: 60vh;
+}
+
+.bi {
+    margin-left: 20px;
+    color:cadetblue;
+    font-size: 1.4em;
+    
+}
+
+.mainsection {
+    background-image: url("../media/background4.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.circle {
+    background: #32557f;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%; 
+}
+
+.project, .project img{
+
+    width: 250px;
+    height: 200px;
+
+  }
+
+.navbar {
+    background-color: rgb(59, 59, 59, 0.75);
+}
+.card {
+    min-height: 250px;
+    background-color: rgb(95, 158, 160, 0.75);
+}
+
+.card img, .card a {
+    min-height: 200px;
+    background-color:rgb(245, 245, 245, 0.75);
+    cursor:pointer;
+}
+
+
+
+.headersection h1{
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 0.2em;
+    
+}
+
+
+.carousel {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.carousel img {
+ 
+}
+
+.footersection {
+    
+}
+
+/* Media Query for Mobile Viewport */
+@media (max-width: 768px) { 
+    .tablet-desktop, .card, .carousel {
+        display: none;
+    }
+
+    h1, h3, p {
+        text-align: center;
+    }
+
+    .headersection {
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .carouselsection {
+        height: 0vh;
+    }
+
+}
+/* Media Query for Tablet-Desktop Viewport */
+@media (min-width: 768px) and (max-width: 1200px) {  
+    
+    .mobile, .card {
+        display: none;
+    }
+
+    .headersection {
+        padding-top: 50px;
+    }
+
+    form {
+        padding-top: 60px;
+    }
+
+    .carouselsection {
+        height: 50vh;
+    }
+    
+}
+
+/* Media Query for Tablet-Desktop Viewport */
+@media (min-width: 1201px) {  
+    
+    .mobile {
+        display: none;
+    }
+
+    .headersection {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .carouselsection {
+        height: 70vh;
+    }
+    
+}
