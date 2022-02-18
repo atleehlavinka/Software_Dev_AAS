@@ -10,7 +10,7 @@ Log:
 <?php
 
 class Database {
-    private static $dsn = 'mysql:host=localhost;dbname=idahosouvenir';
+    private static $dsn = 'mysql:host=localhost;dbname=IdahoSouvenir';
     private static $username = 'onlineuser';
     private static $password = 'pa55word';
     private static $db;
@@ -35,7 +35,7 @@ class Database {
 }
 
 
-    $dsn = 'mysql:host=localhost;dbname=idahoSouvenir';
+    $dsn = 'mysql:host=localhost;dbname=IdahoSouvenir';
         $username = 'onlineuser';
         $password = 'pa55word';
         $db = new PDO($dsn, $username, $password);
